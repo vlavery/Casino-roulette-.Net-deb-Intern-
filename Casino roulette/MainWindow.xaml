@@ -1,0 +1,182 @@
+﻿<Window x:Class="RouletteApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Roulette" Height="450" Width="800" Background="Black">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Name="RouletteGrid" Grid.Row="0" Margin="10,0,-10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.Column="0" Fill="Green" Margin="0,0,0,1" Grid.RowSpan="3" Grid.Row="1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <TextBlock Text="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2"/>
+
+            <Rectangle Grid.Row="1" Fill="Red" Grid.ColumnSpan="2" Margin="57,0,0,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="1" Grid.Column="1" Fill="Black" Grid.ColumnSpan="2" Margin="57,0,1,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="1" Grid.Column="2" Fill="Red" Grid.ColumnSpan="2" Margin="57,0,1,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="1" Grid.Column="4" Fill="Black" Grid.ColumnSpan="3" Margin="56,0,57,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Column="3" Fill="Red" Grid.ColumnSpan="2" Margin="56,0,1,29" Grid.RowSpan="2" Grid.Row="1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="8" Fill="Black" Grid.ColumnSpan="2" Margin="57,0,1,1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="1" Grid.Column="7" Fill="Red" Margin="0,0,0,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="1" Grid.Column="7" Fill="Black" Grid.ColumnSpan="2" Margin="57,0,0,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="1" Grid.Column="8" Fill="Red" Grid.ColumnSpan="2" Margin="57,0,1,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="4" Fill="Black" Margin="54,28,1,1" Grid.ColumnSpan="2" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="1" Grid.Column="10" Fill="Black" Grid.ColumnSpan="2" Margin="56,0,1,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="1" Grid.Column="11" Fill="Red" Grid.ColumnSpan="2" Margin="56,0,1,29" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+
+            <Rectangle Grid.Row="2" Fill="Black" Grid.ColumnSpan="2" Margin="57,0,0,28" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="1" Fill="Red" Grid.ColumnSpan="2" Margin="57,0,1,28" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="3" Fill="Black" Margin="1,0,3,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2" Height="27" VerticalAlignment="Center"/>
+            <Rectangle Grid.Row="2" Grid.Column="4" Fill="Red" Grid.ColumnSpan="3" Margin="56,0,57,1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Column="3" Fill="Black" Grid.ColumnSpan="2" Margin="56,1,1,1" Grid.Row="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="5" Fill="Black" Grid.ColumnSpan="2" Margin="56,0,0,1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Column="7" Fill="Red" Margin="57,28,0,1" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="7" Fill="Black" Margin="0,0,0,1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Column="9" Fill="Red" Grid.ColumnSpan="2" Margin="57,0,1,29" Grid.RowSpan="2" Grid.Row="1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="9" Fill="Black" Grid.ColumnSpan="2" Margin="57,0,1,28" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="10" Fill="Red" Grid.ColumnSpan="2" Margin="56,0,1,28" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="11" Fill="Black" Grid.ColumnSpan="2" Margin="56,0,1,1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+
+            <Rectangle Grid.Row="3" Fill="Red" Grid.ColumnSpan="2" Margin="57,0,0,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="1" Fill="Black" Grid.ColumnSpan="2" Margin="57,0,1,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="2" Fill="Red" Grid.ColumnSpan="2" Margin="57,0,1,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="2" Grid.Column="3" Fill="Black" Grid.ColumnSpan="2" Margin="56,28,1,1" Grid.RowSpan="2" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="5" Fill="Red" RenderTransformOrigin="0.67,1.64" Height="29" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="56,0,0,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Column="5" Fill="Red" Margin="56,0,0,29" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="7" Fill="Red" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="7" Fill="Black" Grid.ColumnSpan="2" Margin="57,0,0,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="8" Fill="Red" Grid.ColumnSpan="2" Margin="57,0,1,1" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="9" Fill="Black" Grid.ColumnSpan="2" Margin="57,0,1,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="10" Fill="Black" Grid.ColumnSpan="2" Margin="56,0,1,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+            <Rectangle Grid.Row="3" Grid.Column="11" Fill="Red" Grid.ColumnSpan="2" Margin="56,0,1,0" RadiusX="10" RadiusY="10" Stroke="DarkGreen" StrokeThickness="2"/>
+
+            <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="3" Grid.Column="1" MouseLeftButtonUp="PlaceBetOnNumber_MouseLeftButtonUp" TextAlignment="Center" Background="Transparent" Cursor="Hand"/>
+
+            <TextBlock Text="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2" Grid.Column="1" MouseLeftButtonUp="PlaceBetOnNumber_MouseLeftButtonUp"/>
+            <TextBlock Text="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="1" Grid.Column="1" MouseLeftButtonUp="PlaceBetOnNumber_MouseLeftButtonUp"/>
+            <TextBlock Text="4" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="3" Grid.Column="2"/>
+            <TextBlock Text="5" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="2" Grid.Column="2"/>
+            <TextBlock Text="6" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="1" Grid.Column="2"/>
+            <TextBlock Text="7" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="3" Grid.Column="3" Margin="0,2,0,0"/>
+            <TextBlock Text="8" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2" Grid.Column="3"/>
+            <TextBlock Text="9" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="1" Grid.Column="3"/>
+            <TextBlock Text="10" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="3" Grid.Column="4" Margin="0,2,0,0"/>
+            <TextBlock Text="11" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2" Grid.Column="4"/>
+            <TextBlock Text="12" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="1" Grid.Column="4"/>
+
+            <TextBlock Text="13" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="3" Grid.Column="5" Margin="0,2,0,0"/>
+            <TextBlock Text="14" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="2" Grid.Column="5"/>
+            <TextBlock Text="15" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="1" Grid.Column="5"/>
+            <TextBlock Text="16" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="3" Grid.Column="6" Margin="0,2,0,0"/>
+            <TextBlock Text="17" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2" Grid.Column="6"/>
+            <TextBlock Text="18" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="1" Grid.Column="6"/>
+            <TextBlock Text="19" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="3" Grid.Column="7" Margin="0,2,0,0"/>
+            <TextBlock Text="20" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2" Grid.Column="7"/>
+            <TextBlock Text="21" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="1" Grid.Column="7"/>
+            <TextBlock Text="22" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="3" Grid.Column="8"/>
+            <TextBlock Text="23" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="2" Grid.Column="8"/>
+            <TextBlock Text="24" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="1" Grid.Column="8"/>
+
+            <TextBlock Text="25" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="3" Grid.Column="9"/>
+            <TextBlock Text="26" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2" Grid.Column="9"/>
+            <TextBlock Text="27" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="1" Grid.Column="9"/>
+            <TextBlock Text="28" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="3" Grid.Column="10"/>
+            <TextBlock Text="29" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2" Grid.Column="10"/>
+            <TextBlock Text="30" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="1" Grid.Column="10"/>
+            <TextBlock Text="31" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="3" Grid.Column="11"/>
+            <TextBlock Text="32" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="2" Grid.Column="11"/>
+            <TextBlock Text="33" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="1" Grid.Column="11"/>
+            <TextBlock Text="34" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="3" Grid.Column="12"/>
+            <TextBlock Text="35" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" Grid.Row="2" Grid.Column="12"/>
+            <TextBlock Text="36" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="Black" Grid.Row="1" Grid.Column="12"/>
+            <TextBlock Text="{Binding ChipsCount}" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold" Foreground="White" Margin="10,10,0,0"/>
+
+
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+
+            <!-- Betting Input -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20"/>
+
+            <!-- Chip Count Display -->
+            <TextBlock Text="{Binding ChipCount}" HorizontalAlignment="Right" Margin="0,20,20,0" Grid.Row="1"/>
+
+            <Button Content="1-18" Click="PlaceBetOn1To12_Click" Height="30" Margin="72,-217,618,217" Background="Black" Foreground="White"/>
+            <Button Content="19-36" Click="PlaceBetOn25To36_Click" Height="30" Margin="640,-217,53,217" RenderTransformOrigin="0.13,2.7" Background="Black" Foreground="White"/>
+
+            <Button Content="Even" Click="PlaceBetOnEven_Click" Height="30" Margin="187,-217,508,217" Background="Black" Foreground="White"/>
+            <Button Content="Odd" Click="PlaceBetOnOdd_Click" Height="30" Margin="534,-217,165,217" Background="Black" Foreground="White"/>
+            <Button Content="Red" Click="PlaceBetOnRed_Click" Height="30" Margin="413,-217,271,217" Background="Red"/>
+            <Button Content="Black" Click="PlaceBetOnBlack_Click" Height="30" Margin="297,-217,392,217" Background="Black" Foreground="White" RenderTransformOrigin="1.057,0.6"/>
+            <Button Content="1st 12" Click="PlaceBetOn1st12_Click" Height="30" Margin="72,-258,508,258" Background="Black" Foreground="White"/>
+            <Button Content="2nd 12" Click="PlaceBetOn2nd12_Click" Height="30" Margin="297,-258,271,258" Background="Black" Foreground="White"/>
+            <Button Content="3rd 12" Click="PlaceBetOn3rd12_Click" Height="30" Margin="534,-258,53,258" Background="Black" Foreground="White"/>
+            <Button Content="2 to 1" Click="PlaceBetOn2To1Top_Click" Margin="739,-326,11,333" Background="Black" Foreground="White" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.282"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button Content="2 to 1" Click="PlaceBetOn2To1Mid_Click" Margin="738,-352,11,360" Background="Black" Foreground="White"/>
+            <Button Content="2 to 1" Click="PlaceBetOn2To1Bottom_Click" Margin="738,-297,11,304" Background="Black" Foreground="White"/>
+
+            <TextBox x:Name="BetAmountTextBox" VerticalContentAlignment="Center" Margin="297,-161,392,172" TextChanged="BetAmountTextBox_TextChanged"/>
+            <Button Content="Place Bet" Click="PlaceBetButton_Click"/>
+
+           
+
+
+        </Grid>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="7" FontWeight="Bold" Foreground="White" Margin="811,79,0,0" RenderTransformOrigin="1.032,0.895" Text="2 to 1">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.386"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform></TextBlock>
+    </Grid>
+</Window>
